@@ -1,3 +1,3 @@
-# IndeDomum.github.io
+# indedomum.nl
 
 Een Persoonlijke (CV / About) pagina van mij 
