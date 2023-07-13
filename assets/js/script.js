@@ -35,7 +35,7 @@ $(function() {
     
     $(document).bind('scroll', function(ev) {
         var scrollOffset = $(document).scrollTop();
-        var containerOffset = $section.offset().top - window.innerHeight;
+        var containerOffset = $section.offset() - window.innerHeight;
         if (scrollOffset > containerOffset) {
             loadDaBars();
             // unbind event not to load scrolsl again
