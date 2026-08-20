@@ -1,209 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Inde-Domum</title>
-
-    <meta name="description" content="Tim Bolhoeve's persoonlijke pagina.">
-    <meta name="author" content="Tim Bolhoeve">
-    <meta name="keywords" content="IndeDomum, Inde Domum, Inde-Domum, Front-end developer, Full-Stack-developer, Full-Stack software developer, Full-Stack Software Engineer, Software Engineer, Django, De Boer Group, De Boer Transport, Tim Bolhoeve, TimBolhoeve, Bolhoeve">  
-
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
-    <!-- Favicon
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
-
-    <!-- Stylesheets
-    ================================================== -->
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal website of Tim Bolhoeve, Full-Stack Software Engineer.">
+  <meta name="theme-color" content="#102a43">
+  <title>Tim Bolhoeve — Full-Stack Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="assets/css/personal.css">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header id="masthead" class="site-header" data-anchor-target=".hero" data-top="background: rgba(255,255,255,0); padding: 30px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0);" data-top-bottom="background: rgba(255,255,255,1); padding: 10px 0; box-shadow: 0px 0px 20px 6px rgba(0, 0, 0, 0.2);">
-        <nav id="primary-navigation" class="site-navigation">
-            <div class="container">
-                <div class="navbar-header page-scroll">
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Tim Bolhoeve — home">
+      <img src="Logos/black_on_transparent.png" alt="Inde Domum">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+      <span class="sr-only">Open menu</span><span></span><span></span>
+    </button>
+    <nav id="site-navigation" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#approach">Approach</a>
+      <a href="#work">Work</a>
+      <a class="nav-contact" href="#contact">Let’s talk <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+    </nav>
+  </header>
 
-                    <button type="button" class="navbar-toggle collapsed" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                    <a href="#hero" class="site-logo"><img src="assets/img/logo_tekst.png" alt="logo"></a>
-
-                </div><!-- /.navbar-header -->
-
-                <div class="main-menu" id="portfolio-perfect-collapse">
-
-                    <ul class="nav navbar-nav navbar-right">
-
-                        <li class="page-scroll"><a href="#hero">Home</a></li>
-                        <li class="page-scroll"><a href="#about">Over</a></li>
-                        <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
-                        <li class="page-scroll"><a href="#contact">Contact</a></li>
-                        
-                    </ul><!-- /.navbar-nav -->
-
-                </div><!-- /.navbar-collapse -->
-
-            </div>
-        </nav><!-- /.primary-navigation -->
-    </header><!-- /#header -->
-
-    <div id="hero" class="hero">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-md-6">
-                    <h1>Tim Bolhoeve</h1>
-                    <div class="page-scroll">
-                        <p class="job-title">Full-Stack Software Engineer</p>
-                        <a href="#contact" class="btn btn-fill ">Contact</a>
-                        <div class="clearfix visible-xxs"></div>
-                        <a href="#about" class="btn btn-border">Over</a>
-                    </div>
-                </div>
-            
-                <div class="col-md-6 text-right">
-                    <img src="assets/img/persoon.png" alt="persoon">
-                </div>
-
-            </div>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Working at GDB Logistics</p>
+        <h1 id="hero-title">Hi, I’m<br><em>Tim Bolhoeve.</em></h1>
+        <p class="hero-intro">I build integrations and web applications that help people get work done. My current focus is on practical low-code solutions with SnapLogic and OutSystems.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Get in touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          <a class="text-link" href="#about">About me <span aria-hidden="true">↓</span></a>
         </div>
-    </div><!-- /.hero -->
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="profile-frame"><img src="assets/img/persoon.png" alt=""></div>
+        <div class="role-card"><span class="role-dot"></span><span>Integrations<br> &amp; web apps</span></div>
+        <p class="coordinate">52° 22′ N&nbsp;&nbsp; / &nbsp;&nbsp;4° 54′ E</p>
+      </div>
+      <p class="hero-index" aria-hidden="true">01 / 04</p>
+    </section>
 
-    <main id="main" class="site-main">
-
-        <section id="about" class="site-section section-about text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h2>Over</h2>
-                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                        <p> Momenteel Full-Stack Software Engineer bij De Boer Group
-                            <br><hr>
-                            <h4>Scholing:</h4>
-                            <br>
-                            <b>Applicatie-media ontwikkeling</b> - Regio College Zaandam
-                            <br>
-                            <b>Software Developer</b> - Hogeschool Utrecht
-                        </p>
-                        <a href="https://resume.io/r/ek7a6h2Zw" class="btn btn-border" target="_blank">Bekijk cv online</a>
-                    </div>
-                </div>
-            </div>
-        </section><!-- /.secton-about -->
-
-        <section id="portfolio" class="site-section section-about text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                        <h2>Portfolio</h2>
-                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                        <p>Te zien op aanvraag via de mail</p>
-                    </div>
-                </div>
-            </div>
-        </section><!-- /.secton-portfolio -->
-
-        <br><br><br>
-
-        <section class="site-section section-counters text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <p class="counter start" data-to="4" data-speed="2000">0</p>
-                        <h4>Jaar ervaring</h4>
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <p class="counter start" data-to="5" data-speed="2000">0</p>       
-                        <h4>Websites online</h4>      
-                    </div>
-                    <div class="col-sm-4 col-xs-12">
-                        <p class="counter start" data-to="2" data-speed="1000">0</p>
-                        <h4>Projecten</h4>
-                    </div>
-                </div>
-            </div>
-        </section><!-- /.section-counters -->
-        <section id="contact" class="site-section section-form text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3>Contact</h3>
-                        <img src="assets/img/lines.svg" class="img-lines" alt="lines">
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="service">
-                            <i class="fa fa-envelope-o" style="font-size:48px;"></i>
-                            <h4>Email</h4>
-                            <p><a href="mailto:bolhoevetim@gmail.com">bolhoevetim@gmail.com</a></p>
-                        </div><!-- /.service -->
-                    </div>
-                </div>
-            </div>
-        </section><!-- /.section-form -->
-
-    </main><!-- /#main -->
-
-    <footer id="colophon" class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-xs-12">
-                    <a class="icon facebook-bg" href="https://www.facebook.com/tim.bolhoeve/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a class="icon linkedin-bg" href="https://www.linkedin.com/in/tim-bolhoeve-478423199/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a class="icon github-bg" href="https://github.com/Tim-Bolhoeve" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a class="icon stack-overflow-bg" href="https://stackoverflow.com/users/19868773/tim-bolhoeve" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><p class="copyright">Copyright &copy; <span id="jaar">jaar</span> Inde-Domum</p></div>
-                <div class="col-sm-4 col-xs-3">
-                    <div class="text-right page-scroll">
-                        <a class="icon icon-up-bg" href="#hero"><i class="icon-up"></i></a>
-                    </div>
-                </div>
-            </div>
+    <section class="about section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-label">01 <span>Profile</span></div>
+      <div class="about-content">
+        <h2 id="about-title">About me</h2>
+        <div class="about-text">
+          <p>I’m a full-stack software engineer based in the Netherlands. I enjoy figuring out how systems and processes fit together, then turning that into software people can actually use.</p>
+          <p>At GDB Logistics, I work on integrations and internal web applications. A lot of that work is done with low-code platforms such as SnapLogic and OutSystems, alongside the usual engineering work around them.</p>
+          <p>Before that, I worked extensively with Python and Django to build high-code web applications.</p>
+          <p>I also use AI as part of my development process: to explore options, work through technical problems and turn an idea into a working solution more efficiently.</p>
+          <a class="text-link" href="https://resume.io/r/ek7a6h2Zw" target="_blank" rel="noopener">View my résumé <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
         </div>
-    </footer><!-- /#footer -->
+      </div>
+      <div class="education-strip">
+        <span>Learning path</span>
+        <p><strong>Software Development</strong> <i aria-hidden="true">→</i> Hogeschool Utrecht</p>
+        <p><strong>Application &amp; Media Development</strong> <i aria-hidden="true">→</i> Regio College Zaandam</p>
+      </div>
+    </section>
 
-    <script>
-        document.getElementById("jaar").innerHTML = new Date().getFullYear();
-    </script>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/skrollr.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js"></script>
-    <script src="assets/js/jquery.countTo.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  
+    <section class="approach" id="approach" aria-labelledby="approach-title">
+      <div class="section-shell">
+        <div class="section-label light">02 <span>How I work</span></div>
+        <div class="approach-heading"><h2 id="approach-title">How I work</h2><p>I prefer to understand the process first, make the solution clear, and keep improving it once it is in use.</p></div>
+        <div class="principles">
+          <article><span>01</span><h3>Start with the process</h3><p>Before building anything, I want to know how the work is done today and where it slows people down.</p></article>
+          <article><span>02</span><h3>Keep it understandable</h3><p>A useful solution should be straightforward for its users and manageable for the people who maintain it.</p></article>
+          <article><span>03</span><h3>Improve as we go</h3><p>The first release is a starting point. Feedback from daily use is what makes an application better.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section-shell" id="work" aria-labelledby="work-title">
+      <div class="section-label">03 <span>What I work on</span></div>
+      <div class="work-heading"><h2 id="work-title">What I work on</h2><p>I work across the stack, with a particular interest in connecting systems and making internal tools easier to work with.</p></div>
+      <div class="capabilities">
+        <article class="capability"><div class="capability-icon"><i class="fa-solid fa-plug" aria-hidden="true"></i></div><h3>System integrations</h3><p>Connecting applications and data flows, especially with SnapLogic, so information gets where it needs to be.</p></article>
+        <article class="capability"><div class="capability-icon"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i></div><h3>Low-code web applications</h3><p>Building internal applications in OutSystems that support everyday operational work.</p></article>
+        <article class="capability"><div class="capability-icon"><i class="fa-brands fa-python" aria-hidden="true"></i></div><h3>Python &amp; Django</h3><p>Experience building high-code web applications with Python and Django.</p></article>
+        <article class="capability"><div class="capability-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div><h3>Full-stack development</h3><p>Working on the frontend, backend and the practical details in between when a solution needs it.</p></article>
+      </div>
+      <div class="availability"><span class="pulse"></span> Always happy to connect <a href="#contact">Get in touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-shell contact-inner">
+        <div class="section-label light">04 <span>Contact</span></div>
+        <h2 id="contact-title">Get in touch</h2>
+        <p>Want to discuss an integration, an application or something else? Feel free to send me an email.</p>
+        <a class="email-link" href="mailto:bolhoevetim@gmail.com">bolhoevetim@gmail.com <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#top"><img src="Logos/white_on_transparent.png" alt="Inde Domum"></a>
+    <p>Designed &amp; built with care by Tim Bolhoeve.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/tim-bolhoeve-478423199/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="https://github.com/Tim-Bolhoeve" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      <a href="https://stackoverflow.com/users/19868773/tim-bolhoeve" target="_blank" rel="noopener" aria-label="Stack Overflow"><i class="fa-brands fa-stack-overflow" aria-hidden="true"></i></a>
+    </div>
+    <a class="back-to-top" href="#top">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+    <small>© <span id="year"></span> Inde Domum</small>
+  </footer>
+  <script src="assets/js/personal.js"></script>
 </body>
 </html>
