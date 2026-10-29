@@ -5,7 +5,7 @@
     --cream: #eee5d8;
     --coral: #f16f5f;
     --line: rgba(16, 42, 67, .17);
-    --muted: #627489;
+    --muted: #56677b;
     --sans: "Space Grotesk", sans-serif;
     --mono: "DM Mono", monospace
 }
@@ -139,7 +139,7 @@ h1 {
     line-height: .98;
     letter-spacing: -.065em;
     margin: 0 0 2rem;
-    font-weight: 800
+    font-weight: 700
 }
 
 h1 em {
@@ -171,7 +171,7 @@ h1 em {
     padding: 1rem 1.25rem;
     text-decoration: none;
     font-size: .8rem;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: .02em
 }
 
@@ -191,7 +191,7 @@ h1 em {
 .text-link {
     color: var(--ink);
     font-size: .79rem;
-    font-weight: 800;
+    font-weight: 700;
     text-underline-offset: 6px
 }
 
@@ -323,7 +323,7 @@ h1 em {
     line-height: 1.1;
     letter-spacing: -.06em;
     margin: 0;
-    font-weight: 800
+    font-weight: 700
 }
 
 .about-text {
@@ -372,6 +372,17 @@ h1 em {
     font-style: normal;
     color: var(--coral);
     font-size: 1rem
+}
+
+.education-strip.certificates {
+    grid-template-columns: .65fr 1fr 1fr 1fr;
+    border-top: 0
+}
+
+@media(max-width:800px) {
+    .education-strip.certificates {
+        grid-template-columns: 1fr
+    }
 }
 
 .approach {
@@ -499,7 +510,7 @@ h1 em {
     margin-left: auto;
     color: var(--ink);
     font-family: var(--sans);
-    font-weight: 800;
+    font-weight: 700;
     text-decoration: none
 }
 
@@ -525,7 +536,7 @@ h1 em {
 }
 
 .contact .section-label span {
-    color: #7c392f
+    color: #4a1a14
 }
 
 .contact h2 {
@@ -539,7 +550,7 @@ h1 em {
 
 .email-link {
     font-size: clamp(1rem, 2.2vw, 1.65rem);
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -.04em;
     color: var(--ink);
     text-underline-offset: 8px
