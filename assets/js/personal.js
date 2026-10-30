@@ -40,4 +40,41 @@ document.addEventListener('DOMContentLoaded', () => {
       [profile, roleCard, orbitOne, orbitTwo].forEach((element) => { element.style.transform = ''; });
     });
   }
+
+  // Hidden terminal: loaded only when someone finds it, so regular visits stay light.
+  let terminalRequested = false;
+  const openTerminal = () => {
+    if (window.IndeTerminal) return window.IndeTerminal.open();
+    if (terminalRequested) return;
+    terminalRequested = true;
+    const style = document.createElement('link');
+    style.rel = 'stylesheet';
+    style.href = 'assets/css/terminal.css';
+    document.head.append(style);
+    const script = document.createElement('script');
+    script.src = 'assets/js/terminal.js';
+    script.onload = () => window.IndeTerminal.open();
+    script.onerror = () => { terminalRequested = false; };
+    document.body.append(script);
+  };
+
+  const sequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight'];
+  let recentKeys = [];
+  document.addEventListener('keydown', (event) => {
+    if (window.IndeTerminal && window.IndeTerminal.isOpen()) return;
+    if (event.target.closest && event.target.closest('input, textarea, select, [contenteditable]')) return;
+    if (event.code === 'Backquote' && !event.ctrlKey && !event.altKey && !event.metaKey) {
+      event.preventDefault();
+      openTerminal();
+      return;
+    }
+    recentKeys = [...recentKeys, event.key].slice(-sequence.length);
+    if (recentKeys.join() === sequence.join()) {
+      recentKeys = [];
+      openTerminal();
+    }
+  });
+
+  const hint = document.querySelector('.konami-hint');
+  if (hint) hint.addEventListener('click', openTerminal);
 });

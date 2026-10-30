@@ -832,3 +832,22 @@ h1 em {
     border: 0
 }
 .hero-art{will-change:transform}.profile-frame,.orbit,.role-card{will-change:transform}.hero-art.is-interactive{cursor:crosshair}.hero-art.is-interactive .profile-frame{transition:transform .45s cubic-bezier(.2,.8,.2,1)}.hero-art.is-interactive .role-card{transition:transform .4s ease}.hero-art.is-interactive .orbit{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+
+.konami-hint {
+    margin: 0 0 0 .8rem;
+    padding: 0;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: 400 .62rem var(--mono);
+    letter-spacing: .18em;
+    opacity: .4;
+    cursor: pointer;
+    transition: opacity .2s, color .2s
+}
+
+.konami-hint:hover,
+.konami-hint:focus-visible {
+    opacity: 1;
+    color: var(--coral)
+}
