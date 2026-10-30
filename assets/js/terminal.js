@@ -155,6 +155,14 @@
       run(line);
     });
     input.addEventListener('keydown', onInputKey);
+    // On US-International layouts the backtick that opened the terminal is a dead key,
+    // so it lands in the input together with the next letter typed ("`h").
+    input.addEventListener('input', () => {
+      if (!input.value.includes('`')) return;
+      const caret = input.selectionStart - (input.value.slice(0, input.selectionStart).split('`').length - 1);
+      input.value = input.value.replace(/`/g, '');
+      input.setSelectionRange(caret, caret);
+    });
 
     ui = { overlay, title, body, output, input, gameView, hudTitle, hudScore, stage, canvas, controls };
 
